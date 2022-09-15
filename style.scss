@@ -1,19 +1,6 @@
 /* see the brand guide for colors, fonts, and images in CodePen: 
 https://docs.google.com/document/d/13de5zlWmnox1BbZOiKo1p7tsirkgv0IQLG_bg1R60uE/edit?usp=sharing */
 
-  /*Declaring and Calling CSS and SCSS Variables */
-:root{
-    --main-font: 'Lato', sans-serif;
-    --main-color: #f2f2f2;
-    --bckgr-color: #082b59;
-  }
-  
-  /* Declaring a Mixin, without argument */
-  @mixin nospace {
-    margin: 0;
-    padding: 0;
-  }
-  
   html {
     box-sizing: border-box;
   }
@@ -56,33 +43,7 @@ https://docs.google.com/document/d/13de5zlWmnox1BbZOiKo1p7tsirkgv0IQLG_bg1R60uE/
     border-bottom: 10px solid #d98555;
   }
       
-  /* SCSS Nesting for Nav Bar */
-  /* nav bar  */
-  .nav ul {
-    list-style-type: none;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-  }
-  .nav li {
-    margin: 0 1rem 1rem 1rem;
-    font-size: 1.3rem;
-  }
-  .nav logo img {
-    max-width: 150px;
-  }
-  .nav logo {
-    flex-basis: 100%;
-    text-align: center;
-  }
-  .nav a {
-    color: white;
-    text-decoration: none;
-    display: block;
-  }
-  .nav a:hover {
-    color: #d98555;
-  }
+  
     
   /* bg white  */
   .main-bkgd {
@@ -194,24 +155,4 @@ https://docs.google.com/document/d/13de5zlWmnox1BbZOiKo1p7tsirkgv0IQLG_bg1R60uE/
   }
       
       
-  /* SCSS Nesting for Footer*/
-  .footer {
-    color: #f2f2f2;
-    text-align: center;
-    border-top: 10px solid #d98555;
-  }
-  .footer a {
-    color: #f2f2f2;
-    font-size: 2rem;
-    display: block;
-    margin: 0 1rem 3rem 1rem;
-  }
-  .footer ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-  }
-    
+  

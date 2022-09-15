@@ -142,7 +142,7 @@ figcaption {
   border: 3px solid #59331d;
 }
 
-.button:hover {
+button:hover {
   background-color: var(--main-color);
   color: #59331d;
 }
@@ -182,7 +182,7 @@ figcaption {
   .desktop {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
   .horizontal {
     width: 80%;
