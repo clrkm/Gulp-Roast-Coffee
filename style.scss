@@ -1,7 +1,7 @@
 /* see the brand guide for colors, fonts, and images in CodePen: 
 https://docs.google.com/document/d/13de5zlWmnox1BbZOiKo1p7tsirkgv0IQLG_bg1R60uE/edit?usp=sharing */
 
-/*Declaring and Calling CSS and SCSS Variables */
+  /*Declaring and Calling CSS and SCSS Variables */
 :root{
     --main-font: 'Lato', sans-serif;
     --main-color: #f2f2f2;
@@ -15,48 +15,46 @@ https://docs.google.com/document/d/13de5zlWmnox1BbZOiKo1p7tsirkgv0IQLG_bg1R60uE/
   }
   
   html {
-      box-sizing: border-box;
-    }
+    box-sizing: border-box;
+  }
+      
+  body {
+    background-color: var(--bckgr-color);
+    @include nospace;
+    font-family: var(--main-font);
+    line-height: 2;
+  }
     
-    body {
-      background-color: var(--bckgr-color);
-      @include nospace;
-      font-family: var(--main-font);
-      line-height: 2;
-    }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  h1,h2,h3 {
+    font-family: 'Poppins', sans-serif;
+  }
+      
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
     
-    *,
-    *::before,
-    *::after {
-      box-sizing: inherit;
-    }
+  img {
+    max-width: 150px;
+  }
     
+  a {
+    color: #59331d;
+  }
     
+  a:hover {
+     text-decoration: none;
+  }
     
-    h1,h2,h3 {
-      font-family: 'Poppins', sans-serif;
-    }
-    
-      h1 {
-        font-size: 2rem;
-        margin-bottom: 0;
-      }
-    
-      img {
-        max-width: 150px;
-      }
-    
-      a {
-        color: #59331d;
-      }
-    
-      a:hover {
-        text-decoration: none;
-      }
-    
-      header {
-        border-bottom: 10px solid #d98555;
-      }
+  header {
+    border-bottom: 10px solid #d98555;
+  }
       
   /* SCSS Nesting for Nav Bar */
   /* nav bar  */
@@ -86,20 +84,20 @@ https://docs.google.com/document/d/13de5zlWmnox1BbZOiKo1p7tsirkgv0IQLG_bg1R60uE/
     color: #d98555;
   }
     
-      /* bg white  */
-      .main-bkgd {
-        background-color: var(--main-color);
-      }
+/* bg white  */
+.main-bkgd {
+  background-color: var(--main-color);
+  }
     
-      /* content in white bg */
-      .main {
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 2rem;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-      }
+/* content in white bg */
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  }
     
       .article {
         flex-basis: 100%;
