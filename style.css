@@ -209,5 +209,5 @@ figcaption {
   margin: 0;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
