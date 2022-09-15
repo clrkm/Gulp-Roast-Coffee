@@ -84,112 +84,114 @@ https://docs.google.com/document/d/13de5zlWmnox1BbZOiKo1p7tsirkgv0IQLG_bg1R60uE/
     color: #d98555;
   }
     
-/* bg white  */
-.main-bkgd {
-  background-color: var(--main-color);
+  /* bg white  */
+  .main-bkgd {
+    background-color: var(--main-color);
+  }
+
+  /* content in white bg */
+  .main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
   }
     
-/* content in white bg */
-.main {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  .article {
+    flex-basis: 100%;
+  }
+
+  .figure {
+    margin: 1rem 0 0 0;
+    flex-basis: 100%;
+    border-radius: 10px;
+  }
+  
+  .figure img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  figcaption {
+    font-size: 0.9rem;
+    color: var(--main-color);
+    padding: 0.5rem;
   }
     
-      .article {
-        flex-basis: 100%;
-      }
-      .figure {
-        margin: 1rem 0 0 0;
-        flex-basis: 100%;
-        border-radius: 10px;
-      }
-      .figure img {
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-      }
-    
-      figcaption {
-        font-size: 0.9rem;
-        color: var(--main-color);
-        padding: 0.5rem;
-      }
-    
-      .button {
-        display: inline-block;
-        background-color: #59331D;
-        border-radius: 10px;
-        padding: 0.5rem 1 rem;
-        margin: 0;
-      }
+  .button {
+    display: inline-block;
+    background-color: #59331D;
+    border-radius: 10px;
+    padding: 0.5rem 1 rem;
+    margin: 0;
+  }
       
-      .button{
-        display: inline-block;
-        background-color: #59331D;
-        border-radius: 10px;
-        padding: 0.5rem 1rem;
-        margin: 0;
-      }
+  .button{
+    display: inline-block;
+    background-color: #59331D;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin: 0;
+  }
     
-      .button {
-        color: var(--main-color);
-        text-decoration: none;
-        border: 3px solid #59331d;
-      }
+  .button {
+    color: var(--main-color);
+    text-decoration: none;
+    border: 3px solid #59331d;
+  }
     
-      .button:hover {
-        background-color: var(--main-color);
-        color: #59331d;
-      }
+  button:hover {
+    background-color: var(--main-color);
+    color: #59331d;
+  }
     
-      @media (min-width: 576px) {
-        nav ul {
-          display: flex;
-          flex-flow: row wrap;
-          justify-content: center;
-          flex-basis: 100%;
-          text-align: center;
-        }
-      }
+  @media (min-width: 576px) {
+    nav ul {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      flex-basis: 100%;
+      text-align: center;
+    }
+   }
     
-      @media (min-width: 576px) {
-        .mobile {
-          display: flex;
-          flex-flow: row wrap;
-          justify-content: space-between; 
-          width: 100%;
-           max-width:756px;
-           height: auto;
-           padding-top: 5%;
-        }
-      }
+  @media (min-width: 576px) {
+    .mobile {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between; 
+      width: 100%;
+      max-width:756px;
+      height: auto;
+      padding-top: 5%;
+    }
+  }
     
-        @media (min-width: 768px) {
-          .tablet {
-              display: flex;
-              flex-flow: row wrap;
-              justify-content: space-between;
-           }
-           .vertical {
-            width: 20%;
-            height: 80%;
-         }
-        }
+  @media (min-width: 768px) {
+    .tablet {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+    .vertical {
+      width: 20%;
+      height: 80%;
+    }
+  }
         
-      @media (min-width: 992px) {
-        .desktop {
-          display: flex;
-          flex-flow: row wrap;
-          justify-content: center;
-        }
-        .horizontal {
-          width: 80%;
-          height: 200%;
-        }    
-      }
+  @media (min-width: 992px) {
+    .desktop {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+    .horizontal {
+      width: 80%;
+      height: 200%;
+     }   
+  }
       
       
   /* SCSS Nesting for Footer*/
