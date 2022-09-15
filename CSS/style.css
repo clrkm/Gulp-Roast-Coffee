@@ -1,0 +1,211 @@
+/* see the brand guide for colors, fonts, and images in CodePen: 
+https://docs.google.com/document/d/13de5zlWmnox1BbZOiKo1p7tsirkgv0IQLG_bg1R60uE/edit?usp=sharing */
+
+html {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color:#082B59;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  
+  
+  h1,h2,h3 {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0;
+    }
+  
+    img {
+      max-width: 100%;
+    }
+  
+    a {
+      color: #59331d;
+    }
+  
+    a:hover {
+      text-decoration: none;
+    }
+  
+    header {
+      border-bottom: 10px solid #d98555;
+    }
+    
+    /* nav bar styling */
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+  
+     nav li {
+      margin: 0 1rem 1rem 1rem;
+       font-size: 1.3rem
+    }
+  
+    /* max width of img */
+    nav .logo img {
+      max-width: 150px;
+    }
+    
+    /* img container */
+    nav .logo {
+      flex-basis: 100%;
+      text-align: center;
+    }
+  
+    nav a {
+      color: white;
+      text-decoration: none;
+      display: block;
+    }
+  
+    nav a:hover{
+      color: #d98555;
+    }
+  
+    /* bg white  */
+    .main-bkgd {
+      background-color: #f2f2f2;
+    }
+  
+    /* content in white bg */
+    .main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+  
+    .article {
+      flex-basis: 100%;
+    }
+    .figure {
+      margin: 1rem 0 0 0;
+      flex-basis: 100%;
+      border-radius: 10px;
+    }
+    .figure img {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+  
+    figcaption {
+      font-size: 0.9rem;
+      color: #f2f2f2;
+      padding: 0.5rem;
+    }
+  
+    .button {
+      display: inline-block;
+      background-color: #59331D;
+      border-radius: 10px;
+      padding: 0.5rem 1 rem;
+      margin: 0;
+    }
+    
+    .button{
+      display: inline-block;
+      background-color: #59331D;
+      border-radius: 10px;
+      padding: 0.5rem 1rem;
+      margin: 0;
+    }
+  
+    .button {
+      color: #f2f2f2;
+      text-decoration: none;
+      border: 3px solid #59331d;
+    }
+  
+    .button:hover {
+      background-color: #f2f2f2;
+      color: #59331d;
+    }
+  
+    @media (min-width: 576px) {
+      nav ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        flex-basis: 100%;
+        text-align: center;
+      }
+    }
+  
+    @media (min-width: 576px) {
+      .mobile {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between; 
+        width: 100%;
+         max-width:756px;
+         height: auto;
+         padding-top: 5%;
+      }
+    }
+  
+      @media (min-width: 768px) {
+        .tablet {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+         }
+         .vertical {
+          width: 20%;
+          height: 80%;
+       }
+      }
+      
+    @media (min-width: 992px) {
+      .desktop {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+      }
+      .horizontal {
+        width: 80%;
+        height: 200%;
+      }    
+    }
+  
+    footer {
+      color: #f2f2f2;
+      text-align: center;
+      border-top: 10px solid #d98555;
+    }
+    footer a {
+      color: #f2f2f2;
+    }
+    footer ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+    footer a {
+      font-size: 2rem;
+      display: block;
+      margin: 0 1rem 3rem 1rem;
+    }
+  
